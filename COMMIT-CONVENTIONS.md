@@ -9,9 +9,7 @@ This project follows conventional commit format with UPPERCASE types for consist
 
 [optional body]
 
-🤖 Generated with [Claude Code](https://claude.ai/code)
-
-Co-Authored-By: Claude <noreply@anthropic.com>
+[optional footer]
 ```
 
 ## Commit Types
