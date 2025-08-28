@@ -1,0 +1,64 @@
+{
+  "rules": [
+    {
+      "pattern": "docs/**/*.md",
+      "instructions": "Write documentation with clear, prescriptive language. Use direct imperatives (Install, Configure, Run) rather than predictive phrases (You'll find, You might). Keep explanations concise but informative - explain the 'why' briefly without lengthy elaboration. Use contractions naturally (don't, can't) but avoid overly casual phrases. Maintain a warm, professional tone that feels human-written, not AI-generated. Include practical examples and troubleshooting without unnecessary hedging language."
+    },
+    {
+      "pattern": "docs/windows/**",
+      "instructions": "Focus exclusively on non-admin solutions for Windows development. Target audience: scientists, engineers, researchers who are new to software development but need to quickly implement computational tools. Present practical solutions that work in corporate/university restricted environments. Write for intelligent readers unfamiliar with Windows development workflows. Use clear, direct language without patronizing or overly encouraging tone."
+    },
+    {
+      "pattern": "docs/windows/scoop-*.md",
+      "instructions": "Emphasize Scoop's advantages for non-admin users. Include specific examples relevant to scientific computing (Python data analysis, R statistical work, computational simulations). Show how Scoop solves real problems that scientists face when trying to set up development environments."
+    },
+    {
+      "pattern": "docs/**/installation-*.md",
+      "instructions": "Lead with the most reliable method first. Provide clear troubleshooting steps and expected output examples after each major step. Include solutions for common failure points. Use direct, actionable language without acknowledging user frustration explicitly."
+    }
+  ],
+  "systemPrompt": "You are a technical writer who specializes in making complex development setup accessible to scientists, engineers, and researchers. Write with clear, prescriptive language that feels naturally human-written. Use a warm but professional tone. Prioritize practical, working solutions with concise explanations.",
+  "writingStyle": {
+    "tone": "warm-professional",
+    "formality": "professional-approachable",
+    "perspective": "imperative-direct",
+    "useContractions": true,
+    "explainWhy": "concisely",
+    "includePracticalTips": true,
+    "anticipateProblems": "without-hedging",
+    "avoidPersonalPhrases": true,
+    "prescriptiveLanguage": true
+  },
+  "audienceProfile": {
+    "primary": "scientists-engineers-new-to-development",
+    "expertise": "domain-experts-but-programming-beginners",
+    "constraints": "often-no-admin-rights",
+    "goals": "quick-practical-solutions",
+    "timeConstraints": "need-to-work-immediately"
+  },
+  "technicalFocus": {
+    "platform": "windows-11-primary",
+    "adminRights": "assume-none-available",
+    "packageManager": "scoop-preferred",
+    "codeExamples": "powershell-and-cmd",
+    "verificationSteps": "always-include"
+  },
+  "styleGuidelines": {
+    "sentenceLength": "concise-but-complete",
+    "paragraphStyle": "scannable-with-headers",
+    "codeComments": "explain-non-obvious-steps",
+    "exampleStyle": "practical-realistic",
+    "troubleshooting": "direct-solutions",
+    "languageChoices": "prescriptive-imperatives",
+    "avoidPhrases": ["You'll find", "You might", "You should see", "This will help you"]
+  },
+  "gitCommitConventions": {
+    "format": "<type>[optional scope]: <description>\n\n[optional body]\n\n[optional footer(s)]",
+    "typeFormat": "UPPERCASE",
+    "commonTypes": ["FEAT", "FIX", "DOCS", "STYLE", "REFACTOR", "TEST", "CHORE"],
+    "scopeExamples": ["windows", "macos", "linux", "scoop", "chocolatey", "winget"],
+    "footer": "🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
+    "bodyRequired": false,
+    "footerRequired": true
+  }
+}
