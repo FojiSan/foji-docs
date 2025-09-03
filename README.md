@@ -1,22 +1,23 @@
 # Development Setup Tutorials
 
-A personal collection of tutorials and how-to guides for setting up and configuring tools for software, firmware, and hardware development.
+Personal collection of practical tutorials for setting up development tools on Windows, with focus on software (eventually firmware, and hardware) development.
 
 ## 📖 About
 
-This repository contains step-by-step tutorials that I've created to help myself and others quickly set up development environments, configure tools, and solve common development challenges. 
+Step-by-step tutorials for setting up development environments, configuring tools, and solving common development challenges. Designed for scientists, engineers, and researchers who need working development environments quickly.
 
-**Primary Focus**: Windows 11 development environment with native tools and WSL2 integration. Secondary support for macOS and Linux systems.
+**Primary Focus**: Windows 11 development with non-admin installations. Built for corporate and academic environments where admin rights are limited.
 
 ## 🚀 Quick Start
 
-### By Operating System
-- **🪟 Windows 11** (Primary) - [Windows Tutorials](./docs/windows/) | [Windows README](./docs/windows/README.md)
-- **🍎 macOS** (Secondary) - [macOS Tutorials](./docs/macos/) | [macOS README](./docs/macos/README.md)  
-- **🐧 Linux** (Secondary) - [Linux Tutorials](./docs/linux/) | [Linux README](./docs/linux/README.md)
+### Start Here
+- **🪟 Windows Development** - [Windows Tutorials](./docs/windows/) | [Essential Setup Guide](./docs/windows/README.md)
+- **📚 Complete Catalog** - [Tutorial Index](./docs/tutorial-index.md) for all available tutorials
+- **🆕 New Users** - [Getting Started Guide](./docs/getting-started.md) for navigation help
 
-### Complete Index
-Browse the [Tutorial Index](./docs/tutorial-index.md) for a complete OS-organized catalog of all available guides.
+### Other Platforms
+- **🍎 macOS** - [Available tutorials](./docs/macos/) (community contributions welcome)
+- **🐧 Linux** - [Available tutorials](./docs/linux/) (community contributions welcome)
 
 ## 📚 Tutorial Categories
 
@@ -29,10 +30,10 @@ Browse the [Tutorial Index](./docs/tutorial-index.md) for a complete OS-organize
 
 ### 🔄 Cross-Platform  
 - **Version Control** - Git workflows and repository management
-- **Testing & Debugging** - Testing frameworks and debugging tools
-- **Hardware Development** - Arduino, ESP32, embedded systems
-- **Firmware Development** - Microcontroller and embedded firmware
-- **Web Development** - Frontend and backend frameworks
+<!-- - **Testing & Debugging** - Testing frameworks and debugging tools -->
+<!-- - **Hardware Development** - Arduino, ESP32, embedded systems -->
+<!-- - **Firmware Development** - Microcontroller and embedded firmware -->
+<!-- - **Web Development** - Frontend and backend frameworks -->
 
 ## 🎯 Tutorial Format
 
@@ -44,16 +45,12 @@ Each tutorial follows a consistent structure:
 
 ## 🤝 Contributing
 
-This is a personal project, but I welcome:
-- **Issue reports** for outdated or incorrect information
-- **Suggestions** for new tutorials via issues
-- **Pull requests** with corrections or improvements
+Personal project, but contributions welcome:
+- **Report issues** for outdated or incorrect information
+- **Suggest tutorials** via GitHub issues
+- **Submit improvements** through pull requests
 
-See [CONTRIBUTING.md](./CONTRIBUTING.md) for details.
-
-## 📋 Getting Started
-
-New to this collection? Start with the [Getting Started Guide](./docs/getting-started.md) to understand how the tutorials are organized and how to use them effectively.
+Read [CONTRIBUTING.md](./CONTRIBUTING.md) for contribution guidelines.
 
 ## 📄 License
 

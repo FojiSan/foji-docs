@@ -1,10 +1,10 @@
 # Installing Scoop Package Manager
 
-Simple guide to install Scoop on Windows without administrator privileges.
+Install Scoop on Windows without administrator privileges.
 
 ## What is Scoop?
 
-Scoop is a command-line package manager for Windows that installs programs to your user directory. Perfect for developers who need tools without admin rights.
+Command-line package manager for Windows that installs programs to user directory. Designed for developers who need development tools without admin rights.
 
 ## Prerequisites
 
@@ -13,9 +13,9 @@ Scoop is a command-line package manager for Windows that installs programs to yo
 - Internet connection
 - Regular user account (no admin required)
 
-## Quick Installation
+## Installation
 
-**Open PowerShell and run:**
+Open PowerShell and execute:
 
 ```powershell
 # Set execution policy for current user

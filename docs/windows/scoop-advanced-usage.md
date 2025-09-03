@@ -462,7 +462,7 @@ scoop bucket add my-bucket "$env:USERPROFILE\my-scoop-bucket"
 
 ### Speed Up Scoop Operations
 
-**aria2 should already be configured (see Advanced Configuration section above), but here are additional optimizations:**
+**aria2 should be configured (see Advanced Configuration section above). Here are additional optimizations:**
 
 ```powershell
 # Check if aria2 is properly configured

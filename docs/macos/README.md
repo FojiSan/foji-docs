@@ -1,6 +1,15 @@
 # macOS Development Tutorials
 
-This folder is reserved for macOS tutorials.
+Placeholder for macOS development setup tutorials.
 
-## Status
-Currently not actively maintained. Contributions welcome.
+## Current Status
+
+**Not actively maintained** - Community contributions welcome for:
+- Homebrew package manager setup
+- Xcode Command Line Tools installation
+- Terminal and shell configuration
+- Development language installations
+
+## Contributing
+
+Submit macOS tutorials via [GitHub issues](../../issues) or pull requests. Follow project [contribution guidelines](../../CONTRIBUTING.md).

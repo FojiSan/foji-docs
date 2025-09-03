@@ -99,7 +99,7 @@ Set-ExecutionPolicy Bypass -Scope Process -Force
 
 **User installation not working:**
 - Some packages require admin rights regardless
-- Use portable versions when available
+- Use portable versions instead
 
 **Corporate proxy:**
 ```powershell

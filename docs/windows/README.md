@@ -1,58 +1,59 @@
 # Windows Development Tutorials
 
-This folder contains tutorials specifically for Windows 11 development setup and configuration.
+Windows 11 development setup tutorials with focus on non-admin installations.
 
-## 🎯 Focus Area
+## 🎯 Primary Focus
 
-The tutorials here are primarily tested and optimized for:
-- **Windows 11** (current development environment)
-- **Windows Subsystem for Linux (WSL2)** where applicable
-- **Native Windows tools** and applications
+Tutorials tested and optimized for:
+- **Windows 11** with latest updates
+- **Non-admin user accounts** - corporate and academic environments
+- **Native Windows tools** and package managers
+- **WSL2 integration** for Unix-based development needs
 
-## 📂 Categories
+## 📂 Available Categories
 
-### Development Environment
-- Code editors and IDEs setup
-- Terminal and PowerShell configuration
-- Package managers (Chocolatey, Scoop, winget)
+### Package Managers & Tools
+- **Scoop** - Developer-focused, non-admin package manager
+- **Chocolatey** - User-mode installations
+- **winget** - Microsoft's official package manager
+- **Package manager comparison** - Choose the right tool
 
-### Programming Languages
-- Node.js and npm/yarn setup
-- Python with pyenv-win
-- Java development environment
-- .NET development setup
-- Go development environment
+<!-- ### Development Environment -->
+<!-- - Code editors (VS Code, portable installations) -->
+<!-- - PowerShell 7+ configuration   -->
+<!-- - Windows Terminal setup -->
 
-### Version Control
-- Git for Windows configuration
-- SSH keys setup
-- GitHub/GitLab integration
+<!-- ### Programming Languages -->
+<!-- - Node.js development setup -->
+<!-- - Python development environment -->
+<!-- - Java and .NET development -->
+<!-- - Scientific computing tools (R, Julia, Anaconda) -->
 
-### Containerization & Virtualization  
-- Docker Desktop setup
-- WSL2 configuration
-- Virtual machine setup
+### Version Control  
+- Git installation (non-admin methods)
+<!-- - SSH key configuration -->
+<!-- - GitHub/GitLab integration -->
 
-### Build Tools & Automation
-- Make for Windows
-- PowerShell scripting
-- Batch scripting best practices
-
-### Database Development
-- PostgreSQL setup
-- MySQL/MariaDB installation
-- SQL Server development
+<!-- ### Advanced Topics -->
+<!-- - WSL2 development environment -->
+<!-- - Docker Desktop setup -->
+<!-- - Database development (PostgreSQL, SQL Server) -->
 
 ## 🚀 Getting Started
 
-1. Check the main [Tutorial Index](../tutorial-index.md) for a complete list
-2. Most tutorials assume Windows 11 with latest updates
-3. Some tutorials may include WSL2 alternatives
-4. Always check prerequisites before starting
+**Recommended sequence for new Windows developers:**
 
-## 💡 Notes
+1. **Start with package managers** - Install [Scoop](./scoop-installation.md) for non-admin package management
+2. **Essential tools** - Git, PowerShell 7+, code editor
+3. **Programming languages** - Install development runtimes as needed  
+4. **Advanced setup** - WSL2, Docker, databases
 
-- Tutorials prioritize native Windows solutions when possible
-- WSL2 alternatives provided for Unix-based tools
-- PowerShell examples use PowerShell 7+ unless specified
-- File paths use Windows conventions (`C:\` format)
+Browse complete tutorial list: [Tutorial Index](../tutorial-index.md)
+
+## 💡 Tutorial Approach
+
+- **Non-admin first** - Solutions work without administrator privileges
+- **Native Windows tools** - Prefer Windows-native solutions when available
+- **WSL2 alternatives** - Unix-based tools when native options inadequate  
+- **PowerShell 7+** - Modern PowerShell syntax and examples
+- **Tested environments** - Windows 11 with current updates

@@ -184,7 +184,7 @@ As the primary development environment, Windows tutorials receive:
 ## 🤝 Contributing
 
 Missing a tutorial for your OS? Found outdated information?  
-See the [Contributing Guide](../CONTRIBUTING.md) for how to help improve this collection.
+Check the [Contributing Guide](../CONTRIBUTING.md) for how to improve this collection.
 
 **Priority for contributions:**
 1. 🪟 **Windows tutorials** (especially Windows 11-specific)

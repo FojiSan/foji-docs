@@ -1,44 +1,44 @@
 # Contributing Guide
 
-Thank you for your interest in contributing to this tutorial collection! While this is primarily a personal project, I welcome contributions that help improve the tutorials and make them more useful for everyone.
+Personal tutorial collection with community contributions welcome. Help improve tutorials for developers working in restricted environments.
 
-## How You Can Help
+## How to Contribute
 
-### 🐛 Reporting Issues
+### 🐛 Report Issues
 
-Found something that doesn't work or is outdated? Please help by:
+Found broken or outdated content:
 
-1. **Check existing issues** to avoid duplicates
-2. **Create a detailed issue** with:
+1. **Check existing issues** first
+2. **Create detailed issue** including:
    - Tutorial name and section
-   - Your operating system and versions
-   - What you expected vs. what happened
+   - Operating system and versions
+   - Expected vs actual results
    - Error messages or screenshots
 
-### 💡 Suggesting Tutorials
+### 💡 Suggest Tutorials
 
-Have an idea for a new tutorial? I'd love to hear it!
+Request new tutorials:
 
-1. **Check if it already exists** in the docs or planned issues
-2. **Create an issue** with the "tutorial request" label
-3. **Include details about**:
-   - What tools/technologies it should cover
-   - Why it would be useful
-   - Any specific challenges you've encountered
+1. **Search existing docs** and planned issues
+2. **Create issue** with "tutorial request" label
+3. **Include details**:
+   - Target tools/technologies
+   - Use case and benefits
+   - Specific challenges encountered
 
-### 🔧 Contributing Improvements
+### 🔧 Submit Improvements
 
-#### Small Fixes
-For typos, broken links, or small corrections:
-1. Fork the repository
-2. Make your changes
-3. Submit a pull request with a clear description
+#### Quick Fixes
+Fix typos, broken links, or small errors:
+1. Fork repository
+2. Make changes
+3. Submit pull request with clear description
 
 #### New Tutorials or Major Updates
-Before spending significant time:
-1. **Create an issue** to discuss the tutorial
-2. **Wait for feedback** to ensure it fits the project goals
-3. **Follow the tutorial format** (see below)
+Discuss before investing significant time:
+1. **Create issue** to discuss tutorial idea
+2. **Wait for feedback** on project fit
+3. **Follow tutorial format** (detailed below)
 
 ## Tutorial Guidelines
 
@@ -74,16 +74,16 @@ Common issues and solutions.
 ```
 
 ### Writing Style
-- **Be clear and concise** - assume the reader is following along step-by-step
-- **Include exact commands** - copy-pasteable code blocks
-- **Test everything** - ensure all steps work on a fresh system
-- **Add context** - explain why each step is necessary
-- **Include screenshots** when helpful (especially for GUI steps)
+- **Clear and direct** - Use prescriptive language and imperatives
+- **Copy-pasteable commands** - Include exact code blocks
+- **Test on clean systems** - Verify all steps work
+- **Explain rationale** - Brief context for each step
+- **Add screenshots** for GUI-heavy procedures
 
 ### File Organization
 - Use lowercase with hyphens: `setup-nodejs-environment.md`
-- Place in appropriate category folder under `/docs/`
-- Update the tutorial index file
+- Place in appropriate OS folder under `/docs/`
+- Update tutorial index file
 
 ## Quality Standards
 
@@ -95,33 +95,34 @@ Common issues and solutions.
 - [ ] Follows the standard format
 
 ### Commit Messages
-Keep it simple and descriptive:
+Use conventional format with UPPERCASE types:
 ```
-Add tutorial for Docker setup on Ubuntu
-Update Node.js installation steps for macOS
-Fix broken links in Git workflow guide
+FEAT[windows]: Add Docker Desktop tutorial
+FIX[scoop]: Update Node.js installation steps  
+DOCS: Fix broken links in Git workflow guide
 ```
 
-## Personal Project Note
+## Project Scope
 
-Since I'm the primary maintainer:
-- **Response time** may vary based on my availability
-- **Tutorial focus** aligns with my development needs but I'm open to broader topics
-- **Quality over quantity** - I prefer well-tested, comprehensive guides
-- **Maintenance** - I'll do my best to keep tutorials updated, but may need help spotting outdated content
+Primary focus areas:
+- **Windows development** - Non-admin installations preferred
+- **Scientific computing** - Python, R, data analysis tools
+- **Engineering workflows** - Practical, working solutions
+- **Restricted environments** - Corporate/academic settings
+- **Quality over quantity** - Well-tested, comprehensive guides
 
 ## Recognition
 
-Contributors will be acknowledged in:
-- Tutorial credits (for substantial contributions)
-- CHANGELOG.md
-- Special thanks in the README for significant help
+Contributors acknowledged in:
+- Tutorial credits (substantial contributions)
+- CHANGELOG.md updates
+- README acknowledgments
 
 ## Questions?
 
-Feel free to:
-- Open an issue for discussion
-- Check existing tutorials for examples
-- Ask questions in your pull request
+Get help:
+- Open discussion issue
+- Review existing tutorials for examples  
+- Ask questions in pull requests
 
-Thanks for helping make these tutorials better! 🎉
+Thanks for improving these tutorials!

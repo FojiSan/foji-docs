@@ -28,7 +28,7 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/).
 
 ## How to Update This Changelog
 
-When adding or updating tutorials:
+To add or update tutorials:
 
 1. **Add entries under the `[Unreleased]` section**
 2. **Use these categories**:
@@ -37,7 +37,7 @@ When adding or updating tutorials:
    - `Fixed` - Corrections to existing tutorials
    - `Removed` - Tutorials no longer maintained or relevant
 
-3. **When creating a release**:
+3. **To create a release**:
    - Move unreleased items to a new version section
    - Add the release date
    - Create a new `[Unreleased]` section
@@ -59,7 +59,7 @@ When adding or updating tutorials:
 
 ## Tutorial Versioning
 
-Since tutorials target specific tool versions, updates are made when:
+Since tutorials target specific tool versions, update them when:
 - Tool versions change significantly
 - Commands or procedures become outdated
 - New best practices emerge
