@@ -55,10 +55,20 @@
   "gitCommitConventions": {
     "format": "<type>[optional scope]: <description>\n\n[optional body]\n\n[optional footer(s)]",
     "typeFormat": "UPPERCASE",
-    "commonTypes": ["FEAT", "FIX", "DOCS", "STYLE", "REFACTOR", "TEST", "CHORE"],
+    "commonTypes": ["FEAT", "FIX", "DOCS", "STYLE", "REFACTOR", "CHORE", "CONFIG"],
+    "typeDefinitions": {
+      "FEAT": "New content addition (new tutorials inside ./docs)",
+      "FIX": "Corrections to existing content (writing style, accuracy, clarity)",
+      "DOCS": "Project-level documentation (README, LICENSE, CONTRIBUTING)",
+      "REFACTOR": "Restructuring content without changing information",
+      "STYLE": "Formatting changes only (markdown, indentation)",
+      "CHORE": "Maintenance tasks and tooling",
+      "CONFIG": "Configuration changes (settings, build files)"
+    },
     "scopeExamples": ["windows", "macos", "linux", "scoop", "chocolatey", "winget"],
     "footer": "🤖 Generated with [Claude Code](https://claude.ai/code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>",
     "bodyRequired": false,
-    "footerRequired": true
+    "footerRequired": false,
+    "footerGuideline": "Add footer only when additional contributors are involved (co-authors, AI agents, reviewers)"
   }
 }
