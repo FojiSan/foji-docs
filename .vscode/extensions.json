@@ -1,0 +1,70 @@
+{
+    "recommendations": [
+        // ! =============================================================================
+        // ! DEVELOPMENT TOOLS
+        // ! =============================================================================
+
+        // * Git and Version Control
+        "mhutchie.git-graph",
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+
+        // * Python Development
+        "ms-python.python",
+        "ms-python.pylint",
+        "ms-python.flake8",
+        "ms-toolsai.jupyter",
+        "njpwerner.autodocstring",
+
+        // * AI-Assisted Development
+        "visualstudioexptteam.vscodeintellicode",
+        "visualstudioexptteam.intellicode-api-usage-examples",
+        "visualstudioexptteam.vscodeintellicode-completions",
+
+        // * PowerShell (Windows)
+        "ms-vscode.powershell",
+
+        // * General Development
+        "editorconfig.editorconfig",
+        "ms-vscode.vscode-json",
+        "redhat.vscode-yaml",
+
+        // ! =============================================================================
+        // ! DOCUMENTATION TOOLS
+        // ! =============================================================================
+
+        // * Markdown Support
+        "yzhang.markdown-all-in-one",
+        "davidanson.vscode-markdownlint",
+        "bierner.markdown-preview-github-styling",
+        "bierner.markdown-mermaid",
+        "shd101wyy.markdown-preview-enhanced",
+
+        // * Writing and File Tools
+        "streetsidesoftware.code-spell-checker",
+        "tomoki1207.pdf",
+
+        // ! =============================================================================
+        // ! PRODUCTIVITY TOOLS
+        // ! =============================================================================
+
+        // * Code Enhancement
+        "aaron-bond.better-comments",
+        "oderwat.indent-rainbow",
+        "ibm.output-colorizer",
+
+        // * Project Management and Navigation
+        "alefragnani.project-manager",
+        "alefragnani.Bookmarks",
+        "gruntfuggly.todo-tree",
+        "wayou.vscode-todo-highlight",
+
+        // ! =============================================================================
+        // ! VISUAL CUSTOMIZATION
+        // ! =============================================================================
+
+        // * Themes and Icons
+        "pkief.material-icon-theme",
+        "johnpapa.vscode-peacock"
+    ]
+}

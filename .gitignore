@@ -2,6 +2,9 @@
 .vscode/
 *.code-workspace
 
+# Keep VS Code extension recommendations
+!.vscode/extensions.json
+
 # Claude Code settings (keep test settings)
 .claude/settings.local.json
 .claude/settings.json
