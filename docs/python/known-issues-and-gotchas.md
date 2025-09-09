@@ -16,6 +16,8 @@ poetry add tensorflow==2.11.0 torch==1.13.0 transformers==4.25.0
 # torch is forbidden.
 ```
 
+*This is a well-documented issue in [Poetry's GitHub repository](https://github.com/python-poetry/poetry/issues/4924), where users report "dependency resolution is extremely slow" due to the NP-hard nature of the problem and Poetry's need to download packages to inspect metadata when it's not available via PyPI's JSON API.*
+
 **Resolution:** Manual constraint specification often required
 ```toml
 [tool.poetry.dependencies]
@@ -41,12 +43,16 @@ poetry install
 # [Errno 12] Cannot allocate memory
 ```
 
+*Memory issues are extensively documented in [Poetry issue #2094](https://github.com/python-poetry/poetry/issues/2094), where users report Poetry "takes ages to resolve the dependencies" and can consume excessive memory on large projects.*
+
 **Slow lock file updates:**
 ```bash
 # Adding a single dependency can take minutes
 time poetry add requests
 # real    2m34.156s  # This should be seconds
 ```
+
+*According to [Poetry's FAQ](https://python-poetry.org/docs/faq/), this slowness occurs because "not all libraries on PyPI have properly declared their metadata" and "Poetry has no choice but to download the packages and inspect them to get the necessary information."*
 
 **Disk space bloat:**
 ```bash
@@ -164,6 +170,8 @@ uv add -e ./local-package
 # Sometimes fails with complex local package structures
 ```
 
+*uv's [official compatibility documentation](https://docs.astral.sh/uv/pip/compatibility/) acknowledges that "uv is not intended to be an exact clone of pip" and "the further you stray from common pip workflows, the more likely you are to encounter differences in behavior." Key missing features include the `--user` flag and full pip configuration file compatibility.*
+
 **requirements.txt parsing edge cases:**
 ```txt
 # Complex requirement specifications sometimes fail
@@ -226,6 +234,8 @@ uv venv --python python3.12
 # Requires external Python version management (pyenv, etc.)
 ```
 
+*A significant regression occurred in [uv issue #2488](https://github.com/astral-sh/uv/issues/2488) where "uv no longer uses the Python interpreter set by pyenv" starting from version 0.1.19, affecting users who relied on pyenv for Python version management.*
+
 ### Lock File and Reproducibility Issues
 
 **Lock file conflicts in teams:**
@@ -252,6 +262,8 @@ export HTTP_PROXY=http://proxy.corp.com:8080
 export NO_PROXY=localhost,127.0.0.1,.corp.com
 # uv sometimes ignores these settings
 ```
+
+*Configuration compatibility issues are documented in uv's [compatibility guide](https://docs.astral.sh/uv/pip/compatibility/): "uv does not read configuration files or environment variables that are specific to pip, like pip.conf or PIP_INDEX_URL" due to the complexity of maintaining bug-for-bug compatibility.*
 
 **Internal package repositories:**
 ```bash

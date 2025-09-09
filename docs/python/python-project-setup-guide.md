@@ -35,6 +35,8 @@ uv ──────── Hybrid Approach ──────── Poetry ─�
 - **Feature complete:** Conda → Poetry → Hybrid → uv
 - **Balanced:** Hybrid approach (uv development + Poetry publishing)
 
+*Performance rankings based on verified benchmarks from [Astral's uv documentation](https://github.com/astral-sh/uv/blob/main/BENCHMARKS.md), [Streamlit Cloud's production data](https://blog.streamlit.io/python-pip-vs-astral-uv/), and [Anaconda's performance analysis](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-performance.html).*
+
 ## Cross-Platform Setup Strategy
 
 ### 1. Foundation Tools Installation
@@ -68,6 +70,8 @@ curl -sSL https://install.python-poetry.org | python3 -
 # System packages for build dependencies
 sudo apt update && sudo apt install -y build-essential python3-dev
 ```
+
+*Installation methods verified from [uv's official installation guide](https://docs.astral.sh/uv/getting-started/installation/) and [Poetry's installation documentation](https://python-poetry.org/docs/#installation).*
 
 ### 2. Unified Project Structure
 

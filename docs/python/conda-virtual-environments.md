@@ -157,6 +157,8 @@ corporate-project/
 conda install tensorflow pytorch scikit-learn pandas numpy matplotlib seaborn jupyter
 ```
 
+*The core issue stems from conda's SAT solver complexity and massive search space. As noted in [Anaconda's performance documentation](https://docs.conda.io/projects/conda/en/stable/user-guide/concepts/conda-performance.html): "Conda is slow and will probably never be as fast as other package managers because Conda is vastly larger and supports scientific use-cases that others do not support." The dependency resolution is an NP-complete problem with thousands of Python and R packages creating an incredibly large search space.*
+
 **Disk space consumption:**
 - Each environment duplicates packages (~500MB-2GB per environment)
 - No deduplication across environments
@@ -177,6 +179,8 @@ conda install tensorflow=2.11 pytorch=1.13 cudatoolkit=11.8
 # Solving environment: failed with repodata from current_repodata.json...
 # (Eventually fails or installs incompatible versions)
 ```
+
+*These solver issues are well-documented in the [conda GitHub issues](https://github.com/conda/conda/issues/7239), where users report environments taking "20+ minutes to solve" even for already-installed packages. The [bioconda community](https://github.com/bioconda/bioconda-recipes/issues/13774) has created extensive FAQs addressing conda solver slowdowns.*
 
 **Version conflicts:**
 - Conservative version selection (often outdated packages)
@@ -273,8 +277,10 @@ conda list | wc -l
 
 **Speed comparison (typical data science environment):**
 - Conda: 3-8 minutes for dependency resolution
-- Poetry: 15-45 seconds for same packages
+- Poetry: 15-45 seconds for same packages  
 - uv: 2-8 seconds for same packages
+
+*Performance improvements with conda's libmamba solver (default since v23.11) show significant gains - [Anaconda reports](https://www.anaconda.com/blog/a-faster-conda-for-a-growing-community) installations improving from 91s to 15s for "conda install scipy tensorflow". However, modern alternatives still maintain substantial performance advantages.*
 
 **Reproducibility:**
 - Conda: Manual version pinning required
