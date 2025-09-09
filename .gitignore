@@ -11,6 +11,9 @@
 # Keep test settings file
 !.claude/settings.test.json
 
+# Claude chat history
+.claude/.history
+
 # Operating System files
 .DS_Store
 .DS_Store?
